@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin: 0 0 10px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+#schemas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.schema {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 30px;
+    gap: 5px;
+    align-items: center;
+    justify-content: start;
+}
+
+.block, .block-c {
+    width: 30px;
+    height: 30px;
+    background-image: url('lamp.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: transparent; /* Make the text color transparent */
+    text-shadow: none; /* Optional: Remove any text shadow */
+}
+
+
+.gap {
+    width: 30px;
+    height: 30px;
+    background-image: url('lamp_off.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.block-c {
+    background-image: url('lamp.webp');
+}
+
+.gap {
+    background-image: url('lamp_off.png');
+    opacity: 0.5; /* Make the gaps a bit transparent */
+}
